@@ -6,6 +6,7 @@ In this project you can find root value from 4 different method.
 3. Regular Falsi
 4. Secant Method
 5. Newton Raphson Method
+
 In these methods you can find root in two different way.
  - Iteration
  - tolerance level
