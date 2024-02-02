@@ -4,8 +4,6 @@
 """
 import numpy as np
 
-
-
 def guass_elimination(A,B,equations):
     values = np.zeros(equations)
     aug = np.concatenate((A, np.expand_dims(B, axis=1)), axis=1)
@@ -114,17 +112,14 @@ def seidel(A,B,equations):
     print()        
     for i in range(len(values)):
         print(f'x{i+1} :: ',values[i])
-  
-
-
     
 print('Choose Method')
 print('1) Guass Elimination')
 print('2) Guass Jordan')
 print('3) Jacobi method')
 print('4) Seidel method')
-choose_methd = int(input('Select :: '))
 
+choose_methd = int(input('Select :: '))
 
 print('Enter Equation values:: ')
 
@@ -164,6 +159,3 @@ elif choose_methd == 4:
     seidel(A,B,equations)
 else:
     print('Method not found')
-    
-    
-    
