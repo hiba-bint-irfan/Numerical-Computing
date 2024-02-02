@@ -173,13 +173,7 @@ def newton_raphson(x0,choice,itr,tol,tol_type):
                 if abs(x-x0) <= tol:
                     return x
         return 'None'
-   
-    
-    
-    
-    
-    
-    
+
 print("1. Bisection Method")
 print("2. Regular Falsi ")
 print("3. Secant Method")
@@ -187,6 +181,7 @@ print("4. Newton Raphson Method")
 choice_func = int(input('Enter which method you want to choice:: '))
 
 choice= int(input('Enter 1 to find by iteration otherwise enter 2 to find by tolerance level ::'))
+
 if choice == 1:
     itr = int(input('Enter number of iteration :: '))
     tol = float(input('Enter number of tolerance :: '))
@@ -195,29 +190,26 @@ else:
     print('1.function value on root')
     print('2. Root Value ')
     tol_type = int(input('Enter Type of tolerance ::  '))
-    
-    
 
-
-if(choice_func==4):
+if (choice_func == 4):
     a = float(input("Enter the initial guess: "))
 else:
     a = float(input("Enter the first initial guess: "))
     b = float(input("Enter the second initial guess: "))
 
-if(choice_func == 1):
+if (choice_func == 1):
     print()
-    root = bisection(a,b,choice,itr,tol,tol_type)
-    print("Required Root is :: " ,root)
+    root = bisection(a, b, choice, itr, tol, tol_type)
+    print("Required Root is :: ", root)
 elif(choice_func == 2):
-    root = regualr_falsi(a,b,choice,itr,tol,tol_type)
-    print("Required Root is :: " ,root)
+    root = regualr_falsi(a, b, choice, itr, tol, tol_type)
+    print("Required Root is :: ", root)
 elif(choice_func== 3):
-    root = secant(a,b,choice,itr,tol,tol_type)
-    print("Required Root is :: " ,root)
+    root = secant(a, b, choice, itr,tol, tol_type)
+    print("Required Root is :: ", root)
 elif(choice_func == 4):
-    root = newton_raphson(a,choice,itr,tol,tol_type)
-    print("Required Root is :: " ,root)
+    root = newton_raphson(a, choice, itr, tol, tol_type)
+    print("Required Root is :: ", root)
 else:
     print('No method')
     

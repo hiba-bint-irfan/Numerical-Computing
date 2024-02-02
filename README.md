@@ -1,5 +1,10 @@
 # Numerical Computing Projects
 
+## Prerequisite
+
+- ![Download and Install Python](https://www.python.org/downloads/)
+- Install numpy library ```pip install numpy```
+
 ## Root-Finder
 In this project you can find root value from 4 different method.
 1. Bisection Method
@@ -7,9 +12,9 @@ In this project you can find root value from 4 different method.
 4. Secant Method
 5. Newton Raphson Method
 
-In these methods you can find root in two different way.
+In these methods you can find root in two different ways
  - Iteration
- - tolerance level
+ - Tolerance level
 
 ## Linear Equation Solver
 In this project you can solve complex linear equation by 4 different methods.
